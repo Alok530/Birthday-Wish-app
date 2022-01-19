@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+.contact{
+    /* position: relative; */
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    /* for align in y-diraction */
+    flex-direction: column;        
+}
+.contact .content{
+    max-width: 800px; 
+    text-align: center;
+}
+.contact .content p{    
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.Home{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url('./components/about1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.greeting{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url('./components/bj.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.Home .content h1{
+    font-weight: 700;
+    font-size: 70px;
+    color: white;
+}
+.Home .content p{
+    opacity: 0.7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.regestration{
+    border-radius: 7px;
+    width: 50%;       
+    background-color: whitesmoke;         
+}
+.regestration span{
+    font-weight: 600;    
+    font-size: 20px;    
+}
+.regestration input{
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(66, 66, 66);
+    padding-left: 15px;
+    font-size: 16px;    
+    margin-top: 5px;    
+}
+.regestration input:focus{
+    border: 2px solid #9b59b6;    
+    box-shadow: none;
+}
+.regestration .Title{
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 23px;    
+}
+.regestration .Title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 4px;
+    width: 185px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);        
+}
+.Reg{    
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./components/reg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formBtn{
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);     
+    width: 40%;   
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 12px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+.regestration button{
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);     
+    width: 100%;   
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 12px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+.regestration button:hover{
+    color: white;
+    cursor: pointer;    
+}
+.links{
+    text-decoration: none;
+    font-weight: 600;        
+}
+.Login{    
+    width: 25%;           
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@media only screen and (max-width: 400px) {
+    .regestration{
+        width: 85%;
+        margin-top: 2125px;
+        margin-bottom: 25px;
+    }    
+    .Reg{
+        height: 100vh;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 45px;        
+    }
+}    
