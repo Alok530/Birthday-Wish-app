@@ -6,6 +6,7 @@ export default function Login() {
     const [name, setname] = useState('')
     return (
         <>
+        // this is form for fill
             <div className="Reg">
                 <div className=" p-4 mt-4 mb-4 regestration Login">
                     <div className="Title">Birthday's Wish</div>
